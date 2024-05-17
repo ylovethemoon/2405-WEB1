@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a-tag</title>
+</head>
+<body>
+    <!-- a href : 웹에서 꼭 필요한 태그 -->
+    <!-- 
+        target 속성 
+        _self : 기본값. 현재 탭이 목적 경로로 이동.
+        _blank : 새 탭으로 이동 
+    -->
+    <a href="https://naver.com" target="_self">네이버로 이동 self</a>
+
+    <a href="https://naver.com" target="_blank">네이버로 이동 blank(새 탭)</a>
+
+
+
+    <!-- 
+        iframe과 함께 사용하는 속성들 
+        _parent 
+        _top   
+    -->
+    <!-- parent : 부모 -->
+    <a href="https://naver.com" target="_parent">네이버로 이동 parent</a>
+
+    <!-- top : 부모 위  -->
+    <a href="https://naver.com" target="_top">네이버로 이동 top</a>
+
+    <!-- 최근 iframe은 특수한 목적 외에는 사용하지 않는다. -->
+
+
+
+
+    <a href="../day04/img-tag.html" >이미지로 이동</a>
+    <a href="../day04/img-tag.html" target="_blank">이미지로 이동(새 탭)</a>
+
+    <!-- tel : 전화번호 연결 
+         sms : 문자 보내기 -->
+    <a href="tel:010-1234-1234">010-1234-1234(전화연결)</a>
+    <a href="sms:010-1234-1234">010-1234-1234(문자보내기)</a>
+
+    <!-- mailto : 한국에서는 메일 앱을 잘 안쓰기 때문에 사용하기 어렵다. / 모바일로는 앱으로 이동 되기 떄문에 차라리 가능. -->
+    <a href="mailto:staryoori@naver.com">mailto:메일 보내기</a>
+
+    <a href="#">임시링크</a>
+    <a href="target-tag">타켓으로 이동</a>
+
+    <p id="target-tag">타켓입니다.</p>
+
+</body>
+</html>
