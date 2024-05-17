@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a-tag</title>
+    <style>
+        body{
+            height: 5000px;
+            position: absolute;
+        }
+
+        #target-tag {
+            position: absolute;
+            bottom: 100px;
+        }
+    </style>
 </head>
 <body>
     <!-- a href : 웹에서 꼭 필요한 태그 -->
@@ -46,7 +57,7 @@
     <a href="mailto:staryoori@naver.com">mailto:메일 보내기</a>
 
     <a href="#">임시링크</a>
-    <a href="target-tag">타켓으로 이동</a>
+    <a href="#target-tag">타켓으로 이동</a>
 
     <p id="target-tag">타켓입니다.</p>
 
