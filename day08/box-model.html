@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+    <style>
+        * { 
+        margin: 0;
+        padding: 0;
+       }
+       /*  
+       ✔ 8px 4px 2px 단위로 추천!
+       */
+
+
+       /* 
+        content : 컨텐츠가 들어 갈 컨텐츠 영역 (파랑)
+        padding : 컨텐츠와 보더 사이의 내부 여백 (초록)
+        border : 컨텐츠의 외곽 선 (여기까지 컨텐츠로 침)
+
+        margin : 컨텐츠와 컨텐츠 사이의 외부 여백 
+        margin은 서로 겹칠 수 있다. 실제로 적용은 margin 값이 더 큰 쪽으로 적용 된다.
+        margin은 서로 영역을 공유한다. 
+
+       */
+
+       .border {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+        padding: 32px;
+
+        box-sizing: border-box;
+
+       }
+        .content {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+        padding: 32px;
+
+        box-sizing: content-box;
+
+        }
+
+        .box {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        padding: 50px;
+
+        box-sizing: border-box;
+        }
+
+
+        /* 
+        box-sizing 
+            content-box : 크기 기준을 컨텐츠(파랑영역) 기준에서 패딩과 보더를 바깥쪽으로 붙인다. (개체가 밖으로 커진다.)
+            border-box : 크기 기준을 보더 바깥쪽으로 잡고, 패딩과 보더를 안쪽으로 붙인다. (개체 크기 고정)        
+        */
+
+        
+       
+    </style>
+
+</head>
+
+
+<body>
+    <button>버튼</button>
+    <button>버튼</button>
+    <button>버튼</button>
+    
+    <div class="border">
+        보더박스
+    </div>
+
+    <div class="content">
+        컨텐츠박스
+    </div>
+
+    <div class="box">박스</div>
+    <div class="box">박스</div>
+    <div class="box">박스</div>
+    <div class="box">박스</div>
+    <div class="box">박스</div>
+
+
+
+
+</body>
+</html>
