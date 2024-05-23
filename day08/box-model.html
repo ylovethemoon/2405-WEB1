@@ -26,7 +26,7 @@
        */
 
        .border {
-        background-color: pink;
+        background-color: blue;
         width: 100px;
         height: 100px;
         padding: 32px;
@@ -35,7 +35,7 @@
 
        }
         .content {
-        background-color: pink;
+        background-color: red;
         width: 100px;
         height: 100px;
         padding: 32px;
@@ -44,22 +44,34 @@
 
         }
 
-        .box {
-        background-color: blue;
-        width: 100px;
-        height: 100px;
-        padding: 50px;
 
-        box-sizing: border-box;
-        }
-
-
-        /* 
+         /* 
         box-sizing 
             content-box : 크기 기준을 컨텐츠(파랑영역) 기준에서 패딩과 보더를 바깥쪽으로 붙인다. (개체가 밖으로 커진다.)
             border-box : 크기 기준을 보더 바깥쪽으로 잡고, 패딩과 보더를 안쪽으로 붙인다. (개체 크기 고정)        
         */
 
+        .box {
+            background-color: pink;
+           
+            width: 100px;
+            height: 100px;
+            padding: 32px;
+        }
+
+
+        .윗놈 {
+            margin-bottom: 100px;
+            background-color: cadetblue;
+        }
+
+        .아랫놈 {
+            margin-top: 50px;
+            background-color: orange;
+        }
+
+
+   
         
        
     </style>
@@ -80,11 +92,19 @@
         컨텐츠박스
     </div>
 
-    <div class="box">박스</div>
-    <div class="box">박스</div>
-    <div class="box">박스</div>
-    <div class="box">박스</div>
-    <div class="box">박스</div>
+
+    <div class="box 윗놈">
+        윗놈입니다.
+    </div>
+    <div class="box 아랫놈">
+        아랫놈입니다.
+    </div>
+    <div class="box">
+        기본 설정 박스
+    </div>
+    <div class="box">
+        기본 설정 박스
+    </div>
 
 
 

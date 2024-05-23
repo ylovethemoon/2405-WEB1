@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+
+            border : 1px solid #222;
+            /* 
+            border-width : 1px;           두께는 너무 두껍게 안 함.
+            border-style : solid;         스타일은 거의 solid만 씀. 
+            border-color : black;   
+            */
+
+            /* border-radius: 20px; */
+            /*  border-radius : 테두리를 둥글게 하는 속성 */
+
+            border-radius: 50%; 
+            /* border-radius: 50%; : 원형 만들어버리기 (width,hight px값이 같을 때= 1:1 비율일 때)*/
+
+
+        
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+
+            border-radius:50%; 
+
+        }
+
+
+        .box3 {
+            width: 200px;
+            height: 100px;
+            background-color: cadetblue;
+
+            border-radius: 50px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
