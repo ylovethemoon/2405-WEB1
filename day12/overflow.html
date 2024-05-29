@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 150px;
+            /* height: 150px; */
+            border: 1px solid #222;
+            overflow-y: scroll;
+            /* y축=세로 에만 스크롤을 줄 수 있음. */
+            /* overflow: scroll; */
+            /* overflow: hidden; */
+            /* overflow: hidden; 은 높이(height)가 지정되어 있지 않으면 작동하지 않는다. */
+
+            /* 
+            hidden : 컨테이너 밖
+            scroll : 스크롤을 만들어 넘친 요소를 탐색할 수 있게 만들어준다.
+            auto : 컨테이너 밖으로 넘칠 때만 스크롤바를 만들어준다.
+                
+            */
+
+           
+            /* word-break: break-all;
+            word-break: keep-all; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque hic reprehenderit ducimus cumque, voluptates eaque, dignissimos inventore a optio consequuntur soluta expedita similique assumenda, veniam perspiciatis. Quisquam, natus beatae.</div>
+
+</body>
+</html>

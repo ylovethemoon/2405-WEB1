@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px solid #222;
+            
+            /* 값을 주고 ; (세미콜론은) CSS에서 무조건 써줘야함. */
+        
+
+
+            /* 아래는 구버전 방식 flex 사용하면 훨 편함. */
+
+            text-align: center;
+            
+            /* 텍스트를 가운데로 */
+
+            line-height: 200px;
+            /* line height : 텍스트의 줄 높이를 지정.
+            흔히 행간을 설정하는 속성으로 알고 있지만 
+            사실 줄 높이를 설정하는 속성이다
+            부모 컨텐츠의 높이와 같은 값을 주면 수직방향으로 가운데 정렬된다. */
+
+
+            /* vertical-align: middle; 
+            : 세로 정렬로 검색하면 나오긴 하는데,
+            테이블(표)에서만 쓸 수 있는 속성이라 활용 불가능. 아예 안먹음. */
+
+        }
+
+        .box-block {
+            display: block;
+        }
+
+        .box-inline {
+            display: inline;
+        }
+
+        .box-inline-block {
+            display: inline-block;   
+        }
+
+        .box-none {
+
+            opacity: 0.5;
+            /* opacity : 0(0%).. 0.5(50%) ... 1(100%) /     0,0.5,1 등으로 표시
+                visibility 와 같은 작동을 하지만,
+                투명도는 0부터 1(100%) 까지 값이 연결 되기 때문에
+                애니메이션 효과 부여 가능.
+                굳이 visibility 를 사용할 이유가 없다. */
+
+
+            /* display: none; */
+            /* visibility: hidden; */
+            /* 
+            visibility: hidden; 
+            :'display: none' 과 비슷하게 컨텐츠를 안보이게 만들어준다.
+             그치만 실체는 존재하되 투명하게 만들어주는 기능. 
+
+             display: none; : 은 실체가 아예 없어져버린다.
+             보통 웹과 모바일의 유동성을 위해 사용.
+            
+             */
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box box-block">block</div>
+    <div class="box box-inline">inline</div>
+    <div class="box box-inline-block">inline-block</div>
+    <div class="box box-none">none</div>
+</body>
+
+</html>
