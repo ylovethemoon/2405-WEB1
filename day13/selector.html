@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector:선택자</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        [type] {
+            background-color: blue;
+        }
+        [value] {
+            background-color: pink;
+        }
+
+        [type='button'] {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+
+        * : 전체 선택자. 초기화 용도로 사용한다. (margin :0 , padding :0)
+        img : 태그선택자. 특정 태그를 초기화 하는데에 사용 (img{display:block;}등)
+        #img-id : 아이디 선택자. #id / 유니크한 값으로 높은 우선순위를 가진다.
+        .img-class : 클래스 선택자. 일반적으로 가장 많이 사용하는 형태.
+        
+    -->
+    <img id="img-id" class="img-class" src="주소" alt="대체텍스트">
+    <!-- 단축키 : img#img-id.img-class -->
+
+    <div class="container">
+        <div class="hi hello">
+            <div class="bye"></div>
+        </div>
+    </div>
+    <!-- 
+        후손 선택자 : [.container .bye] (O) / [.hi .bye] (O)
+        자손(자식) 선택자 : [.container > .bye] (X)  [.hi > .bye] (O)
+        => .bye한테 적용이 되는 것.
+        
+        띄어쓰기 필수
+        후손, 자손 선택자는 CSS를 구조적으로 만들어 줄 수 있는 반면,
+        남용하게 되면 유지보수가 힘들어질 수 있으니 너무 많은 단계를 쓰는건 지양.
+        ex) .container .hi .bye -> 단계가 많아질수록 우선순위가 높아짐.
+
+    --------------------------------------------------------------------------------        
+        
+        [.hi.hello] 
+     -->
+
+
+     <input class="test-botton" type="button" value="버튼">
+
+
+</body>
+</html>
