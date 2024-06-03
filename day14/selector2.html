@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector2</title>
+    
+    <style>
+        .reaction-box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .reaction-box:hover {
+            background-color: blue;
+
+        }
+
+        .reaction-box:active {
+            background-color: red;
+        }
+
+
+        input:enabled {
+            background-color: blue;
+            color: white;
+        }
+
+        input:disabled {
+            background-color: black;
+        }
+
+        input:focus {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+    <!-- 
+        <구조 선택자>
+
+        * 접두
+        : first, last, nth, nth-last
+
+        nth : n번째 (ex. 10th)
+        nth-last : 뒤에서부터 n번째
+
+
+        * 접미
+        : child, of-type
+
+        child : 자식 (내가 몇번째 자식인지 중요)
+        of-type : 유형 (내가 몇번째로 등장하는지 중요)
+
+     -->
+
+
+
+
+
+
+
+
+    <!-- 
+        <반응 선택자>
+
+        선택자:active       -> 클릭중
+        선택자:hover        -> 마우스를 올렸을 때
+
+     -->
+
+     <div class="reaction-box">
+        반응 선택자
+     </div>
+
+
+
+
+
+
+
+
+     <!-- 
+        상태 선택자 : input의 부수속성
+
+        :checked    : 체크박스 등이 체크되어 있을 때
+        :focus      : 포커스를 가지고 있을 때
+        :enabled    : 활성화 된 컨텐츠일 때
+        :disabled   : 비활성화 된 컨텐츠일 때
+      -->
+     
+    <h3>enabled</h3>
+    <p>
+        <input type="text" name="" id="">
+    </p>
+
+    <h3>disabled</h3>
+    <p>입력을 할수 없는 상태로 만들기
+        <input disabled="disabled">
+    </p>
+
+
+
+    <!-- 링크 선택자-->  
+    <style>
+        /* 방문한 적 없는 링크 */
+        a:link {
+            color:pink;
+
+        }
+
+        /* 방문한 적 있는 링크 */
+        a:visited {
+            color: cadetblue;
+        }       
+    </style>
+
+    <a href="http://naver.com">네이버</a>
+    <a href="http://google.co.kr">구글</a>
+
+
+    <!-- 
+        문자 선택자
+        :, :: 다 사용 가능.
+
+
+        ::first-letter          - 첫번째 글자에 적용.
+        ::first-line            - 첫번째 줄에 적용. (브라우저 크기를 줄여도 적용)
+
+        ::after , ::before      - 컨텐츠 뒤,앞 에 들어가는 글자.
+                                    본래 용도는 앞, 뒤에 글씨를 넣기 위한 선택자이지만, 
+                                    디자인만을 위한 태그를 만드는 대신 사용하기 좋은 방법.
+                                    content :"" 가 필수로 들어가야 함.
+        
+        ::selection             - 드래그 한 영역에 적용.
+                                    font-size는 적용 안됨.
+                                    적용 되는 것이 제한 되어 있다.
+
+
+     -->
+
+
+
+     <!-- 
+        부정 선택자
+        
+        선택자:not(선택자)
+
+      -->
+</body>
+</html>
